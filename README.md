@@ -30,13 +30,17 @@ The post details of the post id in the url is displayed <br />
 URL used: http://localhost:27017/posts/users/61617076dc25d3de5f044084 <br />
 ![Get all posts of a specific user](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Get%20posts%20of%20a%20specific%20user%201.PNG)
 ![Get all posts of a specific user 2](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Get%20posts%20of%20a%20specific%20user%202.PNG)
-All the posts of the user with the user id in the url is displayed <br />
+All the posts of the user with the user id in the url are displayed <br />
 
 6. Get all users (GET request) <br />
 URL used: http://localhost:27017/users <br />
+![Get all users](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Get%20all%20users.PNG)
+Details of all the users in the database <br />
 
 7. Get all posts (GET request) <br />
 URL used: http://localhost:27017/posts <br />
+![Get all posts](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Get%20all%20posts.PNG)
+Details of all the posts in the database <br />
 
 ## How to run
 1. Run the command mongod in your cmd terminal at the directory where mongodb is installed
