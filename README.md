@@ -45,7 +45,7 @@ Details of all the posts in the database <br />
 Note: The (upper)body data has no significance when the request is GET
 
 ## How to run
-1. Run the command mongod in your cmd terminal at the directory where mongodb is installed
-2. Make sure a database is created with the name Instagram and collections Users and Posts with their respective attributes.
-3. Use mongodb compass for easy creation of database and also for viewing the data in the database
-4. Use the URLs in a service like postman for POST and GET requests
+1. Run the command mongod in your cmd terminal at the directory where mongodb is installed.
+2. Make sure a database is created with the name Instagram.
+3. Use mongodb compass for easy creation of database and also for viewing the data in the database.
+4. Use the URLs in a service like postman for POST and GET requests.
