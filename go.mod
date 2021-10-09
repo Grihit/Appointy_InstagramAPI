@@ -1,6 +1,11 @@
-module github.com/grihit/Appointy_Instagram
+module github.com/grihit/Appointy_InstagramAPI
 
 go 1.17
+
+require (
+	github.com/BurntSushi/toml v0.3.1
+	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
+)
 
 require (
 	github.com/go-stack/stack v1.8.0 // indirect
@@ -16,5 +21,4 @@ require (
 	golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073 // indirect
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e // indirect
 	golang.org/x/text v0.3.5 // indirect
-	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22 // indirect
 )
