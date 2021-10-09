@@ -4,9 +4,9 @@ An Instagram API made using Go and MongoDB
 ## Tasks that can be performed by this API
 1. Create an User (POST request) <br />
 URL used: http://localhost:27017/users <br />
-![Create A Post 1](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Create%20User%201.PNG)
+![Create A User 1](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Create%20User%201.PNG)
 _id is automatically assigned to the user
-![Create A Post 2](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Create%20User%202.PNG)
+![Create A User 2](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Create%20User%202.PNG)
 The user is successfully inserted to the database
 
 2. Get user using id (GET request) <br />
