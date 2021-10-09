@@ -45,6 +45,13 @@ func (m *UserDAO) FindAllPosts() ([]Post, error) {
 	return posts, err
 }
 
+//Find list of all posts by user
+func (m *UserDAO) FindAllUserPosts(id string) ([]Post, error) {
+	var posts []Post
+	err := db.C(PCOLLECTION).Find(bson.M{"Userid": id}).All(&posts)
+	return posts, err
+}
+
 // Find a user by its id
 func (m *UserDAO) FindById(id string) (User, error) {
 	var user User
@@ -53,10 +60,10 @@ func (m *UserDAO) FindById(id string) (User, error) {
 }
 
 // Find posts by post id
-func (m *UserDAO) FindPostById(id string) ([]Post, error) {
-	var posts []Post
-	err := db.C(PCOLLECTION).FindId(bson.ObjectIdHex(id)).All(&posts)
-	return posts, err
+func (m *UserDAO) FindPostById(id string) (Post, error) {
+	var post Post
+	err := db.C(PCOLLECTION).FindId(bson.ObjectIdHex(id)).One(&post)
+	return post, err
 }
 
 // Insert a user into database

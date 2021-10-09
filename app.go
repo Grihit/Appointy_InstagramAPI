@@ -36,6 +36,17 @@ func AllPostsEndPoint(w http.ResponseWriter, r *http.Request) {
 	respondWithJson(w, http.StatusOK, users)
 }
 
+// GET list of all posts by user
+func AllPostsByUserEndPoint(w http.ResponseWriter, r *http.Request) {
+	params := mux.Vars(r)
+	users, err := dao.FindAllUserPosts(params["id"])
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	respondWithJson(w, http.StatusOK, users)
+}
+
 // GET a user by its ID
 func FindUserEndpoint(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
@@ -115,6 +126,7 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/users", AllUsersEndPoint).Methods("GET")
 	r.HandleFunc("/posts", AllPostsEndPoint).Methods("GET")
+	r.HandleFunc("/posts/users/{id}", AllPostsByUserEndPoint).Methods("GET")
 	r.HandleFunc("/users", CreateUserEndPoint).Methods("POST")
 	r.HandleFunc("/posts", CreatePostEndPoint).Methods("POST")
 	r.HandleFunc("/users/{id}", FindUserEndpoint).Methods("GET")
