@@ -4,6 +4,7 @@ An Instagram API made using Go and MongoDB
 ## Tasks that can be performed by this API
 1. Create an User (POST request) <br />
 URL used: http://localhost:27017/users <br />
+![CreateAPost1](/Images/Create a post 1.PNG)
 
 2. Get user using id (GET request) <br />
 URL used: http://localhost:27017/users/6161701c6c8378c960d53965 <br />
