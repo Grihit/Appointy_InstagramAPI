@@ -41,6 +41,8 @@ Details of all the users in the database <br />
 URL used: http://localhost:27017/posts <br />
 ![Get all posts](https://github.com/Grihit/Appointy_InstagramAPI/blob/master/Images/Get%20all%20posts.PNG)
 Details of all the posts in the database <br />
+<br />
+Note: The (upper)body data has no significance when the request is GET
 
 ## How to run
 1. Run the command mongod in your cmd terminal at the directory where mongodb is installed
